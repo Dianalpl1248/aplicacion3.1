@@ -1,0 +1,243 @@
+﻿<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Tercera Aplicacion</title>
+
+<!--grupo css-->
+<link rel="stylesheet" href="css/jquery.mobile-1.4.5.min.css"/>
+<link rel="stylesheet" href="css/jquery.mobile.icons-1.4.5.min.css"/>
+<link rel="stylesheet" href="css/jquery.mobile.structure-1.5.5.min.css"/>
+<link rel="stylesheet" href="css/temasapp3.min.css"/>
+<!--grupo javaScript-->
+<script src="js/jquery-1.11.2.min.js"></script>
+<script src="js/jquery.mobile-1.4.5.min.js"></script>
+<script src="js/acciones.js"></script>
+<script src="phonegap.js" type="text/javascript"></script>
+<script type="text/javascript">
+function MM_swapImgRestore() { //v3.0
+  var i,x,a=document.MM_sr; for(i=0;a&&i<a.length&&(x=a[i])&&x.oSrc;i++) x.src=x.oSrc;
+}
+function MM_preloadImages() { //v3.0
+  var d=document; if(d.images){ if(!d.MM_p) d.MM_p=new Array();
+    var i,j=d.MM_p.length,a=MM_preloadImages.arguments; for(i=0; i<a.length; i++)
+    if (a[i].indexOf("#")!=0){ d.MM_p[j]=new Image; d.MM_p[j++].src=a[i];}}
+}
+
+function MM_findObj(n, d) { //v4.01
+  var p,i,x;  if(!d) d=document; if((p=n.indexOf("?"))>0&&parent.frames.length) {
+    d=parent.frames[n.substring(p+1)].document; n=n.substring(0,p);}
+  if(!(x=d[n])&&d.all) x=d.all[n]; for (i=0;!x&&i<d.forms.length;i++) x=d.forms[i][n];
+  for(i=0;!x&&d.layers&&i<d.layers.length;i++) x=MM_findObj(n,d.layers[i].document);
+  if(!x && d.getElementById) x=d.getElementById(n); return x;
+}
+
+function MM_swapImage() { //v3.0
+  var i,j=0,x,a=MM_swapImage.arguments; document.MM_sr=new Array; for(i=0;i<(a.length-2);i+=3)
+   if ((x=MM_findObj(a[i]))!=null){document.MM_sr[j++]=x; if(!x.oSrc) x.oSrc=x.src; x.src=a[i+2];}
+}
+</script>
+</head>
+
+<body onLoad="MM_preloadImages('imagenes/cartel.jpg')">
+<div data-role="page" id="principal" data-theme="a">
+ <div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar" data-back-btn-theme="b">
+  <h1>LOS VOLCANES </h1>
+  </div>
+  <!-- Start WOWSlider.com -->
+<iframe src="visor/indexwow.html" style="width:978px;height:240px;max-width:100%;overflow:hidden;border:none;padding:0;margin:0 auto;display:block;" marginheight="0" marginwidth="0"></iframe>
+<!-- End WOWSlider.com -->
+
+  <div data-role="main" class="ui-content">
+  <div data-role="collapsible" data-content-theme="false">
+  <h1>Volcán Popocatépetl</h1>
+  <div>
+  <p>***Vista por el dia***<br>
+ </div>
+  <div>
+  <center><a href="#" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('volcan','','imagenes/popo3.jpg',1)"><img src="imagenes/volcan.jpg" width="800" height="600" id="volcan"></a> </center>
+  </div>
+  </div>
+  </div>     
+ 
+  <div>
+      <ul data-role="listview" data-theme="a" class="ui-listview ui-group-theme-b">
+      <li class="ui-first-child ui-last-child">
+  <a href="#Pagina1" class="ui-btn ui-btn-icon-right ui-icon-carat-r">
+  <h2>Ubicación y Dimensiones</h2>
+  <p>Se muestra la localizacion y medidas del volcán</p>
+  </a>
+  </li>   
+  <li class="ui-first-child ui-last-child">
+ <a href="#Pagina2" class="ui-btn ui-btn-icon-right ui-icon-carat-r">
+   <h2>Dependencias Monitoriales</h2>
+   <p>Se muestra la actividad de este</p>
+  </a>
+  </li>     
+  <li class="ui-first-child ui-last-child">
+  <a href="#Pagina3" class="ui-btn ui-btn-icon-right ui-icon-carat-r">
+  <h2>Medidas Preventivas</h2>                      
+  <p>En el caso de caida de Ceniza y Erupción</p>
+  </a>
+  </li>
+  </ul>    
+</div>   
+<div data-role="main" class="ui-content">
+  <div data-role="collapsible" data-content-theme="false">
+  <h1>Volcán Colima o de Fuego</h1>
+  <div>
+  <p>***Vista panoramica***
+  <br>
+  </div>
+  <div>
+  <center><a href="imagenes/erupcolima.jpg" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('volcancolima','','imagenes/erupcolima.jpg',1)"><img src="imagenes/volcancolima.jpg" width="800" height="600" id="volcancolima"></a>
+  </center> </div>
+  </div></div>    
+<div data-role="footer" align="center" data-theme="a">
+  
+  <div>
+    <h4>Aplicación 3</h4>
+    <h4>Volcán Popocatépetl</h4>
+    <h4>DIANA LAURA PERALTA LARIOS</h4>
+  </div>
+</div>
+</div>
+              
+<div data-role="page" id="Pagina1" data-add-back-btn="true" data-theme="a">
+  <div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar" data-back-btn-theme="b">
+  <h1>UBICACIÓN Y DIMENSIONES</h1>
+  </div>
+  <div data-role="content" align="center">
+   <div>
+     <h2> <b> * VOLCÁN POPOCATÉPETL</b>
+      <br><br>El Popocatépetl esta ubicado en los estados de Morelos, Puebla (45 kilometros) y el Estado de México( a 55 kilometros). Al sur de la Sierra Volcánica Transversal que constituye la espina dorsal del Altiplano Mexicano.
+<br><br>
+En el Estado de México colinda con los municipios: Tlamanalco, Amecameca, Atlauta y Ecatzingo.
+<br><br>
+Con el estado de Morelos colinda específicamente con el municipio de Tetela del Volcán.
+<br><br>
+Por la parte de Puebla colinda con Huejotzingo, San Salvador el Verde, Domingo Arenas, San Nicolás de los Ranchos y Tochimilco.</h2>
+<center><img src="imagenes/map.png" width="70%" height="60%"></center>
+<div data-role="main" class="ui-content">
+  <div data-role="collapsible" data-content-theme="false">
+  <h1> DIMENSIONES </h1>
+  <div>
+  <p><b>• DEL VOLCÁN POPOCATÉPETL <br><br><br>
+  * Su altura es de 5452 m Snm<br><br>
+  * Profundidad del crater: 150m (desde labio inferior) <br><br>
+  * Altitud máxima de 5500 metros sobre el nivel del mar<br><br>
+  * Área del edificio volcánico: 500 km2</b>
+  </div>
+  <div>
+ <img src="imagenes/crater.jpg" width="75%" height="55%">
+ <br><br><hr>
+  <p><b>• DEL VOLCÁN COLIMA O DE FUEGO <br><br><br>
+   * Tiene una altura aproximada de entre 3870 y 3940 msnm<br><br>
+  * Profundidad del crater: de 500 metros de profundidad que con el paso de los años se fue llenando lentamente con lava y sobrepasó el nivel de los labios inferiores. <br><br>
+    * Altitud de 3960 msnm1<br><br>
+    * Coordenadas	19°30′41″N 103°37′05″O</b><br><br>
+    <img src="imagenes/volcolima.jpg" width="75%" height="55%"></div></div>
+</div>
+</div>
+  <div data-role="content" align="center">
+   <div>
+     <h2> <b> * VOLCÁN DE COLIMA O DE FUEGO</b>
+     <br><br>El volcán de colima es un estratovolcán ubicado en los límites de los estados de Colima y Jalisco, en el pais de México.
+    <br><br>
+     Para subir al volcán, el acercamiento más próximo se inicia en la población de <b>Atentique</b>, y de ahí al paraje llamado <b>El Playón</b>. La ruta de ascenso es incierta y con frecuencia se dificulta debido a las erupciones y expulsiones de gas. </h2><br>   
+     <center><img src="imagenes/ubicolima.jpg" width="70%" height="60%"></center>         
+     
+   </div>
+  </div>
+  <div data-role="footer" data-theme="a">
+  <h4>Aplicación 3</h4>
+    <h4>Volcán Popocatépetl</h4>
+    <h4>DLPL</h4>
+  </div>
+</div>
+</div>
+ 
+<div data-role="page" id="Pagina2" data-add-back-btn="true" data-theme="a">
+  <div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar" data-back-btn-theme="b">
+    <h1>DEPENDENCIAS MONITORIALES</h1>
+  </div>
+  <div data-role="content" align="center">
+    <div><center><img src="imagenes/elpopo.jpg" width="70%" height="60%"> </center><br>
+      <h2>El seguimiento o monitoreo permite determinar si todos los componentes del plan de prevención operan efectivamente y si los desastres son identificados con respecto a las alarmas, camáras, filmaciones y el cemaforo son comunicadas oportunamente al público a traves de noticias, para que estas tomen las devidas precauciones.
+<br><br>
+La observación y vigilancia de un volcán activo usualmente se lleva a cabo utilizando técnicas de telemedición o telemetría mediante las cuales las señales medidas en las estaciones remotas se trasmiten por radio hacia un puesto central para su registro continuo e inmediata evaluación.
+<br><br><hr><br>
+<center>EL POPOCATEPETL </center><BR><BR>
+La red del Popocatépetl, actualmente en operación, consta de 25 estaciones remotas y una estación central de adquisición y procesamiento de datos localizada en las instalaciones del CENAPRED. Las estaciones de campo están instaladas en las faldas alrededor del volcán en altitudes entre los 2500 y 4450 m, estando las más cercanas a 2.1 km de distancia del cráter.
+<br><br><center><img src="imagenes/moni.png" width="70%" height="60%"> </center><br>
+El sistema consiste de 15 estaciones con sismómetros de periodo corto (más 3 sismómetros de banda ancha próximos a instalarse), 5 estaciones con inclinómetros, 4 estaciones hidrométricas y de detección de flujos, una estación con radar y una estación con una cámara de video para la observación remota del volcán. Este conjunto de instrumentos sísmicos, geodésicos e hidrométricos genera más de 60 señales las cuales son trasmitidas continuamente, las 24 horas del día, hacia el CENAPRED y algunas también a la UNAM. 
+<br><br>Para llevar esta información desde cualquier sitio del volcán hacia el puesto central se implementó una compleja red de enlaces de telemetría a través de radio. Las señales de las estaciones más lejanas ubicadas en el lado este del volcán, se retransmiten a través de varias estaciones repetidoras (PPO y PPA). Para proteger a los equipos del medio ambiente, particularmente severo en las estaciones altas, y también proteger al personal encargado de su operación y mantenimiento, se construyeron casetas especiales de concreto y mampostería.
+<hr><br>
+<center>DE COLIMA </center><BR>
+El reporte se publica diariamente a las 11 de la mañana; en éste se resume la actividad registrada durante las últimas 24 horas, esto es, de 10 de la mañana del día anterior a 10 de la mañana del día en curso. En caso de que ocurra un evento extraordinario se reportará de forma inmediata.
+<br><br><center><img src="imagenes/proteccion.jpg" width="70%" height="60%"> </center>
+<p> <a href="http://www.cenapred.unam.mx/es/">Click aquí para ir a la Página de CENAPRED</a></p>         
+</h2></div>
+ </div><br>
+ <div data-role="footer" data-theme="a">
+       <h4>Aplicación 3</h4>
+    <h4>Volcán Popocatépetl</h4>
+    <h4>DLPL</h4>
+    </div>
+   </div>
+</div>
+       
+<div data-role="page" id="Pagina3" data-add-back-btn="true" data-theme="a">
+ <div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar" data-back-btn-theme="b">
+    <h1>MEDIDAS PREVENTIVAS</h1>
+ </div>
+ <div data-role="content" align="center">
+<div data-role="main" class="ui-content">
+  <div data-role="collapsible" data-content-theme="false">
+  <h1> EN EL CASO DE ERUPCIÓN </h1>
+  <div>
+  <p>Croquis para llegar al punto <b>"MARCONI"</b>  
+  <br>
+  </div>
+  <div>
+  <center><a href="#" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('Image14','','imagenes/cartel.jpg',1)"><img src="imagenes/prevencion.jpg" width="300" height="250" id="Image14"></a>
+  </center></div>
+  </div>
+  </div>  
+   <div>      
+      <h2>RECOMENDACIONES EN CASO DE CAÍDA DE CENIZA VOLCÁNICA</h2><br><br><b>
+     •	No humedecer la ceniza a fin de evitar taponamientos en el sistema de alcantarillado<br><br>
+•	Mantén la calma.<br><br>
+•	Utiliza medios electrónicos y de comunicación para obtener información confiable que den las autoridades de Protección Civil sobre la caída de ceniza y atiende siempre sus instrucciones.<br><br>
+•	No realices actividades al aire libre y si es posible no salgas.<br><br>
+•	Cierra puertas y ventanas y coloca toallas o trapos húmedos en las rendijas.<br><br>
+•	Si tienes que salir cúbrete con un pañuelo o tapabocas, limpia ojos y garganta con agua pura.<br><br>
+<img src="imagenes/pre.jpg" width="70%" height="60%"><br><br>
+•	Para los ojos, usa lentes protectores, especialmente si usas lentes de contacto.<br><br>
+•	Ten a la mano una linterna y pilas.<br><br>
+•	La ceniza volcánica puede ser resbaladiza, sobre todo cuando está mojada. Toma las precauciones necesarias.<br><br>
+•	Cubre tinacos, cisternas y depósitos de agua.<br><br>
+•	Barre y retira la ceniza de techos, azoteas, patios y calles, deposítalas en bolsas y no permitas que se vaya al drenaje.<br><br>
+•	Si es posible no conduzcas, si tienes que hacerlo, hazlo a baja velocidad y con las luces encendidas, ya que la ceniza dificulta la visibilidad y provoca que el pavimento se vuelva resbaloso.<br><br>
+•	Ante la caída de ceniza volcánica evita consumir alimentos en la vía pública.<br><br>
+•	Si permaneces expuesto por algún tiempo a las cenizas volcánicas, al ingresar a tu casa se recomienda cambiar de ropa.<br><br>
+•	Durante la caída de ceniza volcánica, evita que los menores realicen actividades al aire libre.<br><br>
+•	Mantén a tus mascotas en un lugar techado al igual que sus alimentos. Si tus macotas salen, cepíllalos antes de permitirles la entrada nuevamente.<br><br>
+•	La ceniza puede ser usada para parques, jardines, macetas o tierras de cultivo, ya que es rica en minerales.<br><br>
+•	No repitas ni difundas rumores. La ciudad de Puebla se encuentra a una distancia segura, no intentes salir.<br><br>
+•	Usa las vías de comunicación solo en caso de ser necesario.
+</b><br><br>
+<h2>RECOMENDACIONES EN CASO DE UNA ERUPCIÓN</h2>
+<br><br><img src="imagenes/saludpre.jpg" width="70%" height="60%">
+ <br><br><img src="imagenes/prepara.jpg" width="70%" height="60%">
+<br><br>
+</div>
+ <div data-role="footer" data-theme="a">
+    <h4>Aplicación 3</h4>
+    <h4>Volcán Popocatépetl</h4>
+    <h4>DLPL</h4>
+   </div>
+  </div>
+</div>
+</body>
+</html>
